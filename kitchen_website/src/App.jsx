@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import UpperNavbar from './components/UpperNavbar'
-import { FaTwitter } from "react-icons/fa";
+import ContactUs from './components/ContactUs'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
     <UpperNavbar/>
     <Navbar/>
     <Home />
+    <ContactUs />
     </>
   )
 }

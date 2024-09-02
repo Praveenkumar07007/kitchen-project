@@ -9,7 +9,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 function Navbar() {
     return (
         <div>
-            <div className='flex justify-between p-9 items-center min-h-24'>
+            <div className='flex justify-between p-9 items-center min-h-21'>
                 <img src="https://demo2.themelexus.com/kitchor/wp-content/uploads/2022/06/logo.svg" alt="" />
                 <div className='lg:space-x-9  text-sm font-semibold'>
                     <button className='hover:text-[#DDA859]'>HOME</button>
