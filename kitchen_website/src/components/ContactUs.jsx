@@ -6,9 +6,9 @@ function ContactUs() {
   return (
     <>
       <div className='flex '>
-        <div className="flex m-6 flex-col pl-5 mt-5 bg-white w-[50%] h-[900px]">
-          <h1 className="text-3xl font-bold mb-6 text-gray-800">Enter Your Details</h1>
-          <form action="" className="max-w-lg rounded-lg shadow-md space-y-4">
+        <div className="flex flex-col  items-center mt-5 bg-white w-[50%] h-[900px]">
+          <h1 className="text-3xl font-bold  text-gray-800">Enter Your Details</h1>
+          <form action="" className="w-full p-10 rounded-lg shadow-md space-y-4">
             {/* Name Inputs */}
             <div className="flex flex-row gap-4">
               <label htmlFor="fname" className="flex-1">
@@ -176,10 +176,10 @@ function ContactUs() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-2 flex  justify-center  bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300"
-            >
+              className="w-full py-2   justify-center  bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300"
+            ><div className='flex items-center justify-center'>
               <span>send Messages</span>
-              <FaLongArrowAltRight />
+              <FaLongArrowAltRight /></div>
             </button>
           </form>
         </div>

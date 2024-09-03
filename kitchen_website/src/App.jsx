@@ -5,6 +5,9 @@ import Home from './components/Home'
 import UpperNavbar from './components/UpperNavbar'
 import ContactUs from './components/ContactUs'
 
+
+
+
 function App() {
   return (
     <>
@@ -12,6 +15,7 @@ function App() {
     <Navbar/>
     <Home />
     <ContactUs />
+
     </>
   )
 }
