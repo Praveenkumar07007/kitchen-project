@@ -6,8 +6,7 @@ function ContactUs() {
   return (
     <>
       <div className='flex '>
-        <div className="flex flex-col  items-center mt-5 bg-white w-[50%] h-[900px]">
-          <h1 className="text-3xl font-bold  text-gray-800">Enter Your Details</h1>
+      <div className="flex flex-col items-center  w-[50%] h-[900px] bg-[linear-gradient(to_right,#65635F,#979594,#000000)]">          <h1 className="text-3xl font-bold  text-gray-800">Enter Your Details</h1>
           <form action="" className="w-full p-10 rounded-lg shadow-md space-y-4">
             {/* Name Inputs */}
             <div className="flex flex-row gap-4">
