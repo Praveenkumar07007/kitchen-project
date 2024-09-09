@@ -4,6 +4,8 @@ import { CiSearch } from 'react-icons/ci';
 import { RiAccountCircleLine } from 'react-icons/ri';
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,13 +26,17 @@ function Navbar() {
 
         {/* Main Navigation - Hidden on mobile, shown on medium and above */}
         <div className="hidden md:flex md:space-x-9 text-sm font-semibold">
-          <button className="hover:text-[#DDA859]">HOME</button>
+          <Link to="/" className="hover:text-[#DDA859]">
+            HOME
+          </Link>
           <button className="hover:text-[#DDA859]">VIRTUAL TOURS</button>
           <button className="hover:text-[#DDA859]">PROJECT</button>
           <button className="hover:text-[#DDA859]">PAGES</button>
           <button className="hover:text-[#DDA859]">SHOP</button>
           <button className="hover:text-[#DDA859]">BLOG</button>
-          <button className="hover:text-[#DDA859]">CONTACT</button>
+          <a href="#footer" className="hover:text-[#DDA859]">
+            CONTACT
+          </a>
         </div>
 
         {/* Icons - Hidden on small screens, shown on medium and above */}
@@ -58,9 +64,9 @@ function Navbar() {
       {/* Mobile Menu - Shown only when isMenuOpen is true */}
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white flex flex-col items-start p-4 space-y-4 shadow-md z-20">
-          <button className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
+          <Link to="/" className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100" onClick={toggleMenu}>
             HOME
-          </button>
+          </Link>
           <button className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
             VIRTUAL TOURS
           </button>
@@ -73,12 +79,12 @@ function Navbar() {
           <button className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
             SHOP
           </button>
-          <button className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
+          <a href="#contactus" className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
             BLOG
-          </button>
-          <button className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
+          </a>
+          <a href="#footer" className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
             CONTACT
-          </button>
+          </a>
         </div>
       )}
     </div>

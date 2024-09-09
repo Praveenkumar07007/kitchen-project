@@ -8,7 +8,7 @@ import { IoLogoYoutube } from 'react-icons/io5';
 
 function Footer() {
   return (
-    <>
+    <footer id='footer'>
       <div className="flex flex-wrap text-white justify-center p-12 space-y-8 md:space-y-0 md:space-x-8 ">
         {/* Logo and Contact Section */}
         <div className="flex flex-col space-y-3 items-center max-w-sm">
@@ -89,7 +89,7 @@ function Footer() {
           © Copyright 2024 Kitchor. All rights reserved.
         </h2>
       </div>
-    </>
+    </footer>
   );
 }
 

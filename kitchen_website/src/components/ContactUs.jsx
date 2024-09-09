@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 function ContactUs() {
   return (
-    <div className='flex flex-col md:flex-row text-white'>
+    <contactus  className='flex flex-col md:flex-row text-white'>
       {/* Contact Form */}
       <div className="flex flex-col items-center w-full md:w-1/2 min-h-[850px] bg-gradient-to-r from-[#0C0C0A] via-[#0B0907] to-[#110F0D] p-4">
         <h1 className="text-3xl md:text-4xl font-bold mt-10 md:mt-20 text-center">Enter Your Details</h1>
@@ -186,16 +186,16 @@ function ContactUs() {
             type="submit"
             className="w-full py-2 justify-center bg-white text-black rounded hover:bg-[#242625] hover:text-white transition-colors duration-300"
           >
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center font-semibold space-x-3'>
               <span>Send Messages</span>
               <FaLongArrowAltRight />
-            </div>
+            </div> 
           </button>
         </form>
       </div>
 
       {/* Right Side Image and Text */}
-      <div className="w-full md:w-1/2 bg-cover bg-center p-6 md:p-10 text-white bg-[url('https://images.pexels.com/photos/3302488/pexels-photo-3302488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+      <div id="contactus" className="w-full md:w-1/2 bg-cover bg-center p-6 md:p-10 text-white bg-[url('https://images.pexels.com/photos/3302488/pexels-photo-3302488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
         <h1 className='text-3xl md:text-4xl font-bold mt-10 mb-4 text-center md:text-left'>What to expect from your free appointment</h1>
         <p className='mt-4 mb-6 text-sm md:text-base'>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem is it has a more-or-less normal distribution of letters, using Content here not.
@@ -212,7 +212,7 @@ function ContactUs() {
           </li>
         </ul>
       </div>
-    </div>
+    </contactus>
   );
 }
 
